@@ -3,6 +3,7 @@ android:
   components:
     - build-tools-23.0.0
     - android-23
+    - android-google_apis/armeabi-v7a
 
 before_script:
   - echo no | android create avd --force -n test -t android-23 --abi armeabi-v7a 
