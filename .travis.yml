@@ -5,5 +5,5 @@ android:
     - android-23
     
 script:
-    - adb shell grep ro.build.version.sdk= system/build.prop
+    - echo no | android create avd --force -n test -t android-23 --abi armeabi-v7a 
     - echo hola
