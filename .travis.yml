@@ -5,17 +5,16 @@ android:
   - android-23
   - sys-img-armeabi-v7a-android-23
   - extra-android-m2repository
-
 script:
 - echo hola
-
+- echo $EMAIL_NOTIFICATION
 notifications:
   email:
     recipients:
-      - $EMAIL
-      - mariadeanton@gmail.com
+    - maria@travis-ci.com
+    - $EMAIL_NOTIFICATION
     on_success: always
     on_failure: always
 env:
   global:
-    secure: VOsJH3BWsYDocMGGGyGiHQ3WRo/1RLr7/S104QXXkch4pC5x5ZiZtsaR7cg66l/MUHGu1cODgOzgiRlTcuUu6ePCThQE9QK1vpWtlqPN/6EB3SXgCCEray/AatqrmhAFQo5LINYA0iGkEpZ6LE5KMlRfhObuxo9E/0ReI91EBIOy84daq0NpllvATel5tttueASWT8sDuUysN6CajlQiIbxDzkiZrSZqyAuHLDezcWVKIqhbOaCIlwgxKlTkaYQgfK4FNhJQHv9/1786QY1OSOVg+nstz+5KOm7s1nOF0ITosZL0kMTC5RSsjsdbYwmZ6INUedsn54uR9hj7x57dvQaEBH35znOBeYXFiElDtMTFOaMqR/101Mgg/LPPHgeWQomytQXSCWJ3W4YI+/Rks2PIaCiLyc3PVSR6R+MI9dg6DYCvVUkqzKhoAaBJlZAlujnkRAc/K6iEo6YCygsjU2TFv+ow1a59h+8dVxlhyAhbbekeARQL692pNR8o1taD3WDiV5y0nh0Dhk18/nEivWACiQz08/M2Qla0MR5mX3Seysz5pakc1U3ONm6dMBmw0+WhiGxnoWnSgoY2nfkLYHLPvOAD/lQhWD0fcrepG23usr7IhXfPg1G+2DIZeCjxaQ5WubRAa9D9vBBlhHR7UxbG8csMmc6AEP0uNdo03DY=
+    secure: c53KDbg8u+5Qkzi4br0NmxmuCjwjuitIF8o2N5vWUwgMchsZT15AoTTsh9MhYdO+rikl36YCK9BSo9uMMzcAOsIHTtehiaA1O0EXMip0fQNjyWKEUHJ42Txy/bKyAtBSgl17OOihVYI1LTx+rHBTh/zWPwzEaUrdd49Yg/As0lpdSL4nk/uFm3RcLWpYRDDNCFYecx9OARgpmU/A8V3qiQ4nA7DpeNp5fuUJPT1YoTvK0Ha3jGNKQRSg9mZYwUn8s9u9LAI1BBNZ/Ewu0aMy9W37ywthn41ltc9m8NQe6arYaH1l99Pnuu3PixgExEhGPwojvFrmPLbckaJPr4EWC1+Xv5aU4napZAxZ6DVIxsLdHCbuFz3cWOvatCXsVb2oJKorP8K2KggfFReEqRRJiH3ewG9pBqdgpReBvexjkHBp4EIUyKulsXWkc+Mu+9bhew9WnWhaeVa5XCNtr21l2MqL7iteLtGArjTWmtFVfWG85InR76iAODzJQ6wxl+OkyGL6bADOLnpWR9+X92D01PLSX6Ry7vi+mVTWSSVVhmwaMaaZgwU6+BBEGY7eSPKV9gjpiY0QQwVkwV/J/YHhXu9ekISU6wuyXcCN3o0tKxUTz5jhY3W4QWUy75LFMxEGjkzP211CYqNtWAD8c4skBHzx+CI6dDDcGdIdAssQILQ=
