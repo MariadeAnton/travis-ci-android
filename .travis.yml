@@ -1,16 +1,18 @@
 language: android
-
 android:
   components:
-    - build-tools-23.0.0
-    - android-23
-    - sys-img-armeabi-v7a-android-23
-    - extra-android-m2repository
-
-
+  - build-tools-23.0.0
+  - android-23
+  - sys-img-armeabi-v7a-android-23
+  - extra-android-m2repository
 before_script:
-  - sudo apt-get update
-  - sudo apt-get install -u lib32stdc++6 lib32z1
-
+- sudo apt-get update
+- sudo apt-get install -u lib32stdc++6 lib32z1
+- falla
 script:
-    - echo hola
+- echo hola
+notifications:
+  email: recipients:$EMAIL
+env:
+  global:
+    secure: VOsJH3BWsYDocMGGGyGiHQ3WRo/1RLr7/S104QXXkch4pC5x5ZiZtsaR7cg66l/MUHGu1cODgOzgiRlTcuUu6ePCThQE9QK1vpWtlqPN/6EB3SXgCCEray/AatqrmhAFQo5LINYA0iGkEpZ6LE5KMlRfhObuxo9E/0ReI91EBIOy84daq0NpllvATel5tttueASWT8sDuUysN6CajlQiIbxDzkiZrSZqyAuHLDezcWVKIqhbOaCIlwgxKlTkaYQgfK4FNhJQHv9/1786QY1OSOVg+nstz+5KOm7s1nOF0ITosZL0kMTC5RSsjsdbYwmZ6INUedsn54uR9hj7x57dvQaEBH35znOBeYXFiElDtMTFOaMqR/101Mgg/LPPHgeWQomytQXSCWJ3W4YI+/Rks2PIaCiLyc3PVSR6R+MI9dg6DYCvVUkqzKhoAaBJlZAlujnkRAc/K6iEo6YCygsjU2TFv+ow1a59h+8dVxlhyAhbbekeARQL692pNR8o1taD3WDiV5y0nh0Dhk18/nEivWACiQz08/M2Qla0MR5mX3Seysz5pakc1U3ONm6dMBmw0+WhiGxnoWnSgoY2nfkLYHLPvOAD/lQhWD0fcrepG23usr7IhXfPg1G+2DIZeCjxaQ5WubRAa9D9vBBlhHR7UxbG8csMmc6AEP0uNdo03DY=
