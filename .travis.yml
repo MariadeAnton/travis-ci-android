@@ -9,7 +9,8 @@ android:
 
 
 before_script:
-  - echo no | android create avd --force -n test -t android-23 --abi armeabi-v7a 
-  
+  - sudo apt-get update
+  - sudo apt-get install -u lib32stdc++6 lib32z1
+
 script:
     - echo hola
