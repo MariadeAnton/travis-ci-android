@@ -8,11 +8,12 @@ android:
 script:
 - echo hola
 - echo $EMAIL_NOTIFICATION
+- wot
 notifications:
   email:
     recipients:
     - maria@travis-ci.com
-    - $EMAIL_NOTIFICATION
+    - EMAIL_NOTIFICATION
     on_success: always
     on_failure: always
 env:
