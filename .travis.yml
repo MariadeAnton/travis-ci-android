@@ -5,9 +5,7 @@ android:
   - android-23
   - sys-img-armeabi-v7a-android-23
   - extra-android-m2repository
-before_script:
-- sudo apt-get update
-- sudo apt-get install -u lib32stdc++6 lib32z1
+
 script:
 - echo hola
 
@@ -15,6 +13,7 @@ notifications:
   email:
     recipients:
       - $EMAIL
+      - mariadeanton@gmail.com
     on_success: always
     on_failure: always
 env:
