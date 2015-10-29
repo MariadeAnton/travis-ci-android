@@ -6,7 +6,7 @@ android:
   - sys-img-armeabi-v7a-android-23
   - extra-android-m2repository
 script:
-- echo hola
+  - echo $ADB_INSTALL_TIMEOUT
 notifications:
   email:
     recipients:
