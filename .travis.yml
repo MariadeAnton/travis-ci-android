@@ -1,13 +1,13 @@
-sudo: false
 language: android
+
+sudo: false
+
 android:
   components:
-  - platform-tools
-  - build-tools-23.0.2
-  - build-tools-24.3.3
-  - android-23
-  - sys-img-armeabi-v7a-android-23
-  - extra-android-m2repository
+    - tools # to find repository-11.xml
+    - tools # get SDK 25.1.6
+    - build-tools-23.0.3
+    - android-25
+
 script:
-  - echo $ADB_INSTALL_TIMEOUT
-  - echo hola
+  - android list sdk -e
